@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BLUETOOTH</string>
+    <string name="buscar">BUSCAR</string>
+    <string name="action_settings">OPCIONES</string>
+    <string name="ON">BLUETOOTH ON</string>
+    <string name="desconectar">DESCONECTAR</string>
+    <string name="ENVIO">ENVIO</string>
+    <string name="VARIABLE">VAR</string>
+</resources>

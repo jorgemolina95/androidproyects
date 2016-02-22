@@ -1,0 +1,60 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+ android:layout_width="match_parent"
+    android:fillViewport="false"
+    android:id="@+id/principal">
+
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            android:id="@+id/Principal"
+            android:background="#ffbbdfff">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnbluetooth"
+            android:text="@string/ON"
+            android:onClick="turnOn" />
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/btnsearch"
+             android:text="@string/buscar"
+             android:layout_alignParentTop="true"
+             android:layout_toRightOf="@+id/btnbluetooth"
+             android:layout_toEndOf="@+id/btnbluetooth"
+             android:onClick="buscar" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btndesconectar"
+                android:text="@string/desconectar"
+                 android:layout_below="@+id/btnbluetooth"
+                android:onClick="desconectar_modulo" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnalimentar"
+                android:text="@string/ENVIO"
+                android:layout_below="@+id/btnbluetooth"
+                android:layout_toRightOf="@+id/btnbluetooth"
+                android:layout_toEndOf="@+id/btnbluetooth"
+                android:onClick="envio" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtvariable"
+                android:text="@string/VARIABLE"
+                android:layout_below="@+id/btndesconectar"/>
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="100sp"
+                android:id="@+id/ListaDevices"
+                android:layout_below="@+id/txtvariable"></ListView>
+
+
+
+
+        </RelativeLayout>
+</ScrollView>
